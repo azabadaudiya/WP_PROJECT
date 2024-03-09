@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.title{
+ 
+margin: auto;
+    font-size:1.5vw;
+}
+
+
+/*  APPLICATION FORM HEADING */
+.apphead{
+    justify-content: center;
+    align-items: center;
+  height: 40px;
+
+}
+.apphead h2{
+    text-align: center;
+    align-items: center;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  
+}
+
+
+.formcontainer{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 25px;
+   padding: 10px;
+    font-size: 15px;
+  
+    
+}
+.formcontainer{
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    border-radius: 5px;
+   
+    width: 100%;
+}
+.formcontainer h2{
+   
+    text-align: center;
+    font-size:x-large;
+    font-weight: 400;
+    font-size: x-large;
+    padding: 20px;
+    margin: 5px;
+
+}
+hr{
+    margin: 2px;
+    
+}
+
+
+.formcontainer h2,p{
+    padding: 15px 20px 15px 20px;
+    margin: 5px;
+
+}
+h6{
+    padding:0px 20px 30px 20px;
+    margin: 5px;
+  font-size: medium;
+  font-weight: 300;
+
+}
+input[type="text"],input[type="number"],input[type="file"],input[type="email"],textarea,input[type="date"]{
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+input[type="submit"]{
+     background-color: rgba(42, 185, 92, 0.832);
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    color: #fff;
+    font-family:monospace;
+font-weight: 300;
+cursor:grab;
+}
+input[type="submit"]:hover{
+    background-color: rgba(79, 144, 104, 0.718);
+}
+
+/* RESPONSIVENESS OF FACULTY PAGE*/
+@media only screen and (max-width: 350px)
+{ 
+  header{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 350px)
+{ 
+    section.mainbody{display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;}
+
+ div#row{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+}
+@media only screen and (min-width: 350px) and (max-width: 500px)
+{ 
+  
+ div#row{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+}
+
+@media only screen and (max-width: 600px){
+.apphead h2{
+   
+   margin: 10px;
+  height: 40px;
+  font-size:small;
+  text-align: center;
+  align-items: center;
+  font-weight: 200px;
+}
+}
+    
+
+
+ 

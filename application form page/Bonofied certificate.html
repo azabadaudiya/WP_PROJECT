@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../Home Page/home.css">
+    <link rel="stylesheet" href="styleweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../Home Page/gecg-logo.png" alt="gecg logo">
+        </div>
+        <div class="title">
+            <h1>Government Engineering College, Gandhinagar</h1>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- NAVBAR -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn"><i class="fas fa-bars" onclick=showslidebar()></i></label>
+
+        <ul class="slidebar">
+            <li onclick=hideslidebar()><a href="#">
+               </a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Faculty Profile</a></li>
+            <li id="content-mobile">
+                <a href="#">Bonafide Application</a>
+                <ul id="dropdown-products-mobile">
+                    <li><a href="#">Apply for Bonafide Certificate</a></li>
+                    <li><a href="#">Current and Past Application</a></li>
+                    <li><a href="#">Application Status</a><br></li>
+                    <li><a href="#">Application Approval</a></li>
+                </ul>
+            </li>
+            <li id="static"><a href="#">Login</a></li>
+        </ul>
+        <ul class="menubar">
+            <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+            <li class="hideOnMobile"><a href="#">Faculty Profile</a></li>
+            <li class="hideOnMobile" id="content-pc">
+                <a href="#">Bonafide Application</a>
+                <ul id="dropdown-products-pc">
+                    <li><a href="#">Apply for Bonafide Certificate</a></li>
+                    <li><a href="#">Current and Past Application</a></li>
+                    <li><a href="#">Application Status</a><br></li>
+                    <li><a href="#">Application Approval</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menubutton" onclick=showslidebar()><a href="#">
+                 </a></li>
+        </ul>
+    </nav>
+
+    <!-- END OF NAVBAR -->
+    <div class="apphead">
+        <h2>ONLINE APPLICATION FOR BONAFIDE CERTIFICATE</h2>
+    </div>
+    
+    <div class="center">
+        <div class="formcontainer">
+            <form action="" method="post">
+
+                
+                <p>*Name of the Applicant in BLOCK Letters (As per 10th Class Certificate):<input type="text"
+                        name="name" placeholder="Enter your name" required></p>
+                <p>*Father's Name:<input type="text" name="name" placeholder="" required></p>
+                <p>*University Enrollment Number:<input type="text" name="number" placeholder="000000000000" required></p>
+                <p>*Date:<input type="date" name="number" placeholder="" required></p>
+                <p>*Department:<input type="text" name="Department" required></p>
+                <p>*Semester:<input type="number" name="number" required></p>
+                <p>*Phone number: <input type="number" name="number" placeholder="" required></p>
+                <p>*Email: <input type="email" name="email" placeholder="" required></p>
+                <p>*Address:<textarea placeholder="Enter your Address" name="adreess" required></textarea></p>
+                <p>*Purpose:<textarea placeholder="Enter your purpose" name="purpose" required></textarea></p>
+
+                <p>*Declaration:</p>
+                <h6><input type="checkbox" required> I certify that the details given above are true to the best of my knowledge.
+                    I further certify that I
+                    shall pay the required fee at the time of receiving the certificate.</h6>
+                <p>*Upload Photograph <input type="file" alt="" required>
+                <p>*Upload Signature
+                    <input type="file" alt="" required>
+                </p>
+                <p>
+                <input type="submit"></p>
+            </form>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>@ 2024 Government Engineering College, Gandhinagar, Gujarat, India</p>
+        <p>Created by Team CE DEPT.|Last updated on 02/03/2024 09:19:55</p>
+    </footer>
+    <!-- END OF FOOTER -->
+</body>
+
+</html>

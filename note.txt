@@ -1,0 +1,3 @@
+current past application (table)
+application status (pending or rejected ) (popup on reject button) (rejected with reason)
+application approval (pdf download)

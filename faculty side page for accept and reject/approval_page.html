@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Side</title>
+    <link rel="stylesheet" href="../Home Page/index.css">
+    <link rel="stylesheet" href="approval_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    
+</head>
+<body>
+     <!-- HEADER -->
+     <header>
+        <div class="logo">
+            <img src="../Home Page/gecg-logo.png" alt="gecg logo">
+        </div>
+        <div class="title">
+            <h1>Government Engineering College, Gandhinagar</h1>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- NAVBAR -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn"><i class="fas fa-bars" onclick=showslidebar()></i></label>
+
+        <ul class="slidebar">
+            <li onclick=hideslidebar()><a href="#">
+               </a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Faculty Profile</a></li>
+            <li id="content-mobile">
+                <a href="#">Bonafide Application</a>
+                <ul id="dropdown-products-mobile">
+                    <li><a href="#">Apply for Bonafide Certificate</a></li>
+                    <li><a href="#">Current and Past Application</a></li>
+                    <li><a href="#">Application Status</a><br></li>
+                    <li><a href="#">Application Approval</a></li>
+                </ul>
+            </li>
+            <li id="static"><a href="#">Login</a></li>
+        </ul>
+        <ul class="menubar">
+            <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+            <li class="hideOnMobile"><a href="#">Faculty Profile</a></li>
+            <li class="hideOnMobile" id="content-pc">
+                <a href="#">Bonafide Application</a>
+                <ul id="dropdown-products-pc">
+                    <li><a href="#">Apply for Bonafide Certificate</a></li>
+                    <li><a href="#">Current and Past Application</a></li>
+                    <li><a href="#">Application Status</a><br></li>
+                    <li><a href="#">Application Approval</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menubutton" onclick=showslidebar()><a href="#">
+                    </a></li>
+        </ul>
+    </nav>
+
+    <!-- END OF NAVBAR -->
+
+<div class="status-container">
+    <div class="form-container">
+    <form action="" method="POST">
+        Enrollment ID: &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" id="enrollmentId" name="enrollmentId" required><br>
+        Select Semester:
+        <select id="semester" name="semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select><br>
+       Select Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" id="date" name="date">
+        <button type="submit">Search</button>
+    </form>
+</div>
+    <br>
+    <div class="table-container">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Enrollment</th>
+                <th>Semester</th>
+                <th>Date</th>
+                <th>Approve</th>
+                <th>Reject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kirtan Vyas</td>
+                <td>CE</td>
+                <td>47</td>
+                <td>4</td>
+                <td>31/11/2023</td>
+                <td><button class="approve-button">Approve</button></td>
+                <td><button onclick="openPopup()" class="reject-button">Reject</button></td>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <form id="popup-form">
+                            <textarea id="user-input" placeholder="Write an appropriate reason" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </tr>
+           
+        </tbody>
+    </table>
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</div>
+</div>
+    <footer>
+        <p>@ 2024 Government Engineering College, Gandhinagar, Gujarat, India</p>
+        <p>Created by Team CE DEPT.|Last updated on 02/03/2024 09:19:55</p>
+    </footer>
+   
+</body>
+</html>

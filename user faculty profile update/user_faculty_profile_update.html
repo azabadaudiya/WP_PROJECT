@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user_faculty_profile_update.css">
+    <link rel="stylesheet" href="../Home Page/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="../Home Page/gecg-logo.png" alt="gecg logo">
+        </div>
+        <div class="title">
+            <h1>Government Engineering College, Gandhinagar</h1>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- NAVBAR -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn"><i class="fas fa-bars" onclick=showslidebar()></i></label>
+
+        <ul class="slidebar">
+            <li onclick=hideslidebar()><a href="#">
+               </a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Faculty Profile</a></li>
+            <li id="content-mobile">
+                <a href="#">Bonafide Application</a>
+                <ul id="dropdown-products-mobile">
+                    <li><a href="#">Apply for Bonafide Certificate</a></li>
+                    <li><a href="#">Current and Past Application</a></li>
+                    <li><a href="#">Application Status</a><br></li>
+                    <li><a href="#">Application Approval</a></li>
+                </ul>
+            </li>
+            <li id="static"><a href="#">Login</a></li>
+        </ul>
+        <ul class="menubar">
+            <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+            <li class="hideOnMobile"><a href="#">Faculty Profile</a></li>
+            <li class="hideOnMobile" id="content-pc">
+                <a href="#">Bonafide Application</a>
+                <ul id="dropdown-products-pc">
+                    <li><a href="#">Apply for Bonafide Certificate</a></li>
+                    <li><a href="#">Current and Past Application</a></li>
+                    <li><a href="#">Application Status</a><br></li>
+                    <li><a href="#">Application Approval</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li class="menubutton" onclick=showslidebar()><a href="#">
+                    </a></li>
+        </ul>
+    </nav>
+
+    <div class="user-container">
+        <h2>User Profile</h2>
+        <div class="profile-info">
+            <div class="user-details">
+                <div class="info-item">
+                    <label for="username">Username:</label>
+                    <span id="username" contenteditable="false">JohnDoe</span>
+                </div>
+                <div class="info-item">
+                    <label for="email">Email:</label>
+                    <span id="email" contenteditable="false">johndoe@example.com</span>
+                </div>
+                <div class="info-item">
+                    <label for="bio">Bio:</label>
+                    <span id="bio" contenteditable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+                <button id="editBtn">Edit Profile</button>
+            </div>
+            <div class="profile-image">
+                <img src="../user faculty view/yogendra tank.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const editBtn = document.getElementById('editBtn');
+        const usernameSpan = document.getElementById('username');
+        const emailSpan = document.getElementById('email');
+        const bioSpan = document.getElementById('bio');
+
+        editBtn.addEventListener('click', () => {
+            if (editBtn.textContent === 'Edit Profile') {
+                // Enable editing
+                editBtn.textContent = 'Save Changes';
+                usernameSpan.contentEditable = true;
+                emailSpan.contentEditable = true;
+                bioSpan.contentEditable = true;
+            } else {
+                // Save changes
+                editBtn.textContent = 'Edit Profile';
+                usernameSpan.contentEditable = false;
+                emailSpan.contentEditable = false;
+                bioSpan.contentEditable = false;
+            }
+        });
+    </script>
+     <footer>
+        <p>@ 2024 Government Engineering College, Gandhinagar, Gujarat, India</p>
+        <p>Created by Team CE DEPT.|Last updated on 02/03/2024 09:19:55</p>
+    </footer>
+</body>
+</html>
